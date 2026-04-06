@@ -104,6 +104,28 @@
             max-width: 600px;
             margin: 0 auto;
         }
+
+        /* Desactivar animaciones en dispositivos móviles */
+        @media (max-width: 768px) {
+            .portfolio-card {
+                transition: none;
+            }
+
+            .portfolio-card:hover {
+                transform: none !important;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+            }
+
+            .btn-view:hover {
+                transform: none !important;
+            }
+
+            /* Desactivar AOS en móvil */
+            [data-aos] {
+                opacity: 1 !important;
+                animation: none !important;
+            }
+        }
     </style>
 </head>
 <body class="portafolio">

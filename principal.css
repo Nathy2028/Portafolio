@@ -333,6 +333,29 @@ body {
             background-color: #fffdea;
             transform: translateY(-5px);
         }
+
+/* Desativar animações em dispositivos móveis */
+@media (max-width: 768px) {
+    .btn1:hover,
+    .btn1:active,
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .nav-link:hover {
+        transform: none !important;
+        animation: none !important;
+    }
+
+    .btn1::before {
+        transition: none !important;
+    }
+
+    .hamburger span,
+    .nav-link,
+    .navbar-container {
+        transition: none !important;
+    }
+}
+
 /* Responsive Gallery Title */
 .gallery-title {
     font-size: clamp(3rem, 12vw, 200px);

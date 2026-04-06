@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="../principal.css">
     <link rel="stylesheet" href="../portafolio.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        /* Desactivar AOS en móviles */
+        @media (max-width: 768px) {
+            [data-aos] {
+                opacity: 1 !important;
+                animation: none !important;
+            }
+        }
+    </style>
 </head>
 <body class="portafolio">
     <nav class="navbar-modern">

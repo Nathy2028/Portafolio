@@ -41,6 +41,8 @@
             backdrop-filter: blur(15px);
             box-shadow: 0 10px 40px rgba(33, 191, 230, 0.2);
             transition: 0.3s ease;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .icon{
@@ -52,6 +54,42 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
+        }
+
+        /* Responsive para tablet */
+        @media (max-width: 992px) {
+            .dock {
+                gap: 25px;
+                padding: 15px 25px;
+            }
+
+            .icon {
+                font-size: 60px;
+            }
+        }
+
+        /* Responsive para móvil */
+        @media (max-width: 768px) {
+            .dock {
+                gap: 15px;
+                padding: 12px 15px;
+            }
+
+            .icon {
+                font-size: 45px;
+            }
+        }
+
+        /* Responsive para móvil pequeño */
+        @media (max-width: 576px) {
+            .dock {
+                gap: 10px;
+                padding: 10px 10px;
+            }
+
+            .icon {
+                font-size: 35px;
+            }
         }
         .icon:hover {
             transform: translateY(-15px) scale(1.7);
@@ -73,6 +111,26 @@
         }
         .dock:hover {
            transform: scale(1.05);
+        }
+
+        /* Desactivar animaciones en dispositivos móviles */
+        @media (max-width: 768px) {
+            .icon:hover {
+                transform: none !important;
+            }
+
+            .icon:hover i {
+                animation: none !important;
+            }
+
+            .dock:hover {
+                transform: none !important;
+            }
+
+            [data-aos] {
+                opacity: 1 !important;
+                animation: none !important;
+            }
         }
         .about-container {
             max-width: 1200px;

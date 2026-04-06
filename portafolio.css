@@ -19,6 +19,14 @@
     transition: transform 0.3s ease;        
 }
 
+/* Desativar animações de hover em dispositivos móveis */
+@media (max-width: 768px) {
+    .gallery > img:hover {
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
 .gallery > img.img-1x1 {
     grid-column-end: span 1;
     grid-row-end: span 1;
@@ -121,6 +129,18 @@
     background-color: #0fa3c8;
     transform: scale(1.05);
     color: white;
+}
+
+/* Desativar animações em dispositivos móviles */
+@media (max-width: 768px) {
+    .back-to-menu a:hover {
+        transform: none !important;
+        background-color: #21BFE6;
+    }
+    
+    .modal-close:hover {
+        color: white;
+    }
 }
 
 /* Sección Hero/Título */

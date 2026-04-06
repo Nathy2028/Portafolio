@@ -78,6 +78,14 @@
             text-align: center;
         }
 
+        /* Desactivar animaciones en dispositivos móviles */
+        @media (max-width: 768px) {
+            [data-aos] {
+                opacity: 1 !important;
+                animation: none !important;
+            }
+        }
+
         .emoji-item {
             font-size: 3rem;
             animation: float 3s ease-in-out infinite;

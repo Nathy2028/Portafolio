@@ -35,6 +35,19 @@
             transform: translateY(-5px);
         }
 
+        /* Desactivar animaciones en dispositivos móviles */
+        @media (max-width: 768px) {
+            .btn-primary:hover,
+            .btn-secondary:hover {
+                transform: none !important;
+            }
+
+            [data-aos] {
+                opacity: 1 !important;
+                animation: none !important;
+            }
+        }
+
     </style>
 </head>
 <body>
