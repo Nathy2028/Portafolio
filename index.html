@@ -29,7 +29,7 @@
 
         .card-body {
             background: white;
-            padding: 25px;
+            padding: 10px;
         }
 
         .card-title {
@@ -99,10 +99,58 @@
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 40px;
             max-width: 1200px;
             margin: 0 auto;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        /* Responsive para tablet */
+        @media (max-width: 992px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        /* Responsive para móvil */
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 0 15px;
+            }
+
+            .card-img-top {
+                height: 250px;
+            }
+
+            .card-title {
+                font-size: 1.3rem;
+            }
+
+            .card-text {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Móvil muy pequeño */
+        @media (max-width: 576px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 0 10px;
+            }
+
+            .card-img-top {
+                height: 200px;
+            }
+
+            .card-title {
+                font-size: 1.1rem;
+            }
         }
         
     </style>
@@ -123,7 +171,7 @@
         </div>
     </nav>
     <section class="panel panel1">
-        <div class="container text-center" data-aos="fade-up">
+        <div class="container text-center"">
             <h1 class="display-4" style="
             font-size: clamp(2.5rem, 8vw, 4.5rem);
             font-weight: 900;
@@ -144,13 +192,12 @@
         </div>
     </section>
     <section class="panel panel3">
-        <div class="container text-center d-flex flex-column justify-content-center align-items-center">
-        <div class="container">
-            <p class="lead font-angelica" style="color: #e1faff; font-size: 50px;">Explore my work</p>
+        <div style="width: 100%; padding: 40px 20px;">
+            <p class="lead font-angelica" style="color: #e1faff; font-size: 50px; text-align: center; margin-bottom: 50px;">Explore my work</p>
             
             <div class="portfolio-grid">
                 <!-- Card 1: BEACH -->
-                <div class="card portfolio-card" data-aos="fade-up">
+                <div class="card portfolio-card">
                     <img src="imagenes/PortafolioFotografia/f.jpeg" class="card-img-top" alt="Beach Photography">
                     <div class="card-body">
                         <h5 class="card-title">Beachside Landscapes</h5>
@@ -160,16 +207,15 @@
                 </div>
 
                 <!-- Card 2: 7 Pecados Capitales -->
-                <div class="card portfolio-card" data-aos="fade-up">
+                <div class="card portfolio-card">
                     <img src="imagenes/PortafolioFotografia/7/3.jpg" class="card-img-top" alt="7 Pecados Capitales">
                     <div class="card-body">
                         <h5 class="card-title">7 Deadly Sins</h5>
                         <p class="card-text">An artistic portrait series exploring the seven deadly sins through expressive photography and creative composition.</p>
                         <a href="Fotografia/retrato7pecados.html" class="btn btn-view">View Collection</a>
                     </div>
-                </div>  
+                </div>
             </div>
-        </div>
         </div>
     </section>    
        

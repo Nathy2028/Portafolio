@@ -63,28 +63,6 @@
             transform: scale(1.05);
         }
 
-        /* Desactivar animaciones en dispositivos móviles */
-        @media (max-width: 768px) {
-            .portfolio-card {
-                transition: none;
-            }
-
-            .portfolio-card:hover {
-                transform: none !important;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
-            }
-
-            .btn-view:hover {
-                transform: none !important;
-            }
-
-            /* Desactivar AOS en móvil */
-            [data-aos] {
-                opacity: 1 !important;
-                animation: none !important;
-            }
-        }
-
         .portfolio-section {
             padding: 80px 20px;
             background-color: #f5f5f5;
@@ -126,8 +104,8 @@
     <!-- Hero Section -->
     <section class="panel panel1">
         <div class="container text-center">
-            <h1 class="display-4 font-angelica" style="font-size: 200px; color: aliceblue;">Photography Projects</h1>
-            <p class="lead" style="color: white; font-size: 1.3rem;">Explore my photography collection</p>
+            <h1 class="display-4 font-angelica gallery-title">Photography Projects</h1>
+            <p class="lead " style="color: white; font-size: 1.3rem;">Explore my photography collection</p>
         </div>
     </section>
 
@@ -202,7 +180,12 @@
 
     <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/animations.js"></script>
+    <script>
+        AOS.init();
+        
+        // Menu Hamburguesa
+        const hamburger = document.getElementById('hamburger');
+        const navbarContainer = document.getElementById('navbarContainer');
         
         hamburger.addEventListener('click', function() {
             navbarContainer.classList.toggle('active');
