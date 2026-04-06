@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+            .portfolio-card {
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background: white;
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn-view {
+            background-color: #21BFE6;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-view:hover {
+            background-color: #0fa3c8;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .portfolio-section {
+            padding: 80px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar-modern">
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-container" id="navbarContainer">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="menuproyectos.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <section class="panel panel1">
+        <div class="container text-center" data-aos="fade-up">
+            <h1 class="display-4" style="
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #f9f7f7 15%, #e1faff 50%, #fbf8d9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            line-height: 1.2;">Designer and developer of digital experiences ⋆✴︎˚｡⋆</h1>
+            <p class="lead font-angelica" style="color: #e1faff; font-size: 50px;">Design. Code. Experience.</p>
+            <a href="menuproyectos.html" class="btn btn1 btn-lg">Explore my work</a>
+        </div>
+    </section>
+    <section class="panel panel2">
+        <div class="container text-center d-flex flex-column justify-content-center align-items-center">
+            <h1 class="mb-4 font-angelica;">Interactive media designer & illustrator crafting story-driven experiences through games, branding, and visual narratives.</h1>
+            <a href="about.html" class="btn btn-primary btn-lg">Get to know me</a>
+        </div>
+    </section>
+    <section class="panel panel3">
+        <div class="container text-center d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+            <p class="lead font-angelica" style="color: #e1faff; font-size: 50px;">Explore my work</p>
+            
+            <div class="portfolio-grid">
+                <!-- Card 1: BEACH -->
+                <div class="card portfolio-card" data-aos="fade-up">
+                    <img src="imagenes/PortafolioFotografia/f.jpeg" class="card-img-top" alt="Beach Photography">
+                    <div class="card-body">
+                        <h5 class="card-title">Beachside Landscapes</h5>
+                        <p class="card-text">A stunning collection of beach and coastal photography capturing the beauty of seaside landscapes and seascapes.</p>
+                        <a href="Fotografia/photography.html" class="btn btn-view">View Collection</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: 7 Pecados Capitales -->
+                <div class="card portfolio-card" data-aos="fade-up">
+                    <img src="imagenes/PortafolioFotografia/7/3.jpg" class="card-img-top" alt="7 Pecados Capitales">
+                    <div class="card-body">
+                        <h5 class="card-title">7 Deadly Sins</h5>
+                        <p class="card-text">An artistic portrait series exploring the seven deadly sins through expressive photography and creative composition.</p>
+                        <a href="Fotografia/retrato7pecados.html" class="btn btn-view">View Collection</a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        </div>
+    </section>    
+       
+    <section class="panel panel4">
+        <div class="container text-center d-flex flex-column justify-content-center align-items-center">
+            <h1 class="mb-4">Footer</h1>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+         
+         // Menu Hamburguesa
+         const hamburger = document.getElementById('hamburger');
+         const navbarContainer = document.getElementById('navbarContainer');
+         
+         hamburger.addEventListener('click', function() {
+             navbarContainer.classList.toggle('active');
+             hamburger.classList.toggle('active');
+         });
+         
+         // Cerrar menú al hacer clic en un enlace
+         document.querySelectorAll('.nav-link').forEach(link => {
+             link.addEventListener('click', function() {
+                 navbarContainer.classList.remove('active');
+                 hamburger.classList.remove('active');
+             });
+         });
+    </script>
+</body>
+</html>

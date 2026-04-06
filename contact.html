@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="portafolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 30px;
+    top: 0;
+    position: sticky;
+    
+}
+.panel1{
+    z-index: 1;
+}
+.panel2{
+    z-index: 1;
+}
+        .dock {
+            display: flex;
+            gap: 30px;
+            padding:18px 35px;
+            margin-bottom: 40px;
+            border-radius: 25px;
+            background: transparent;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 40px rgba(33, 191, 230, 0.2);
+            transition: 0.3s ease;
+        }
+
+        .icon{
+            font-size: 70px;
+            color: #eaf2f4;
+            cursor: pointer;
+            transition: 0.25s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .icon:hover {
+            transform: translateY(-15px) scale(1.7);
+        }
+        .icon:hover i {
+            animation: bounce 0.5s ease;
+        }
+
+        @keyframes bounce{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-8px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        .dock:hover {
+           transform: scale(1.05);
+        }
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        .about-hero-title {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #f9f7f7 15%, #e1faff 50%, #fbf8d9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .about-subtitle {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .about-section {
+            margin: 80px 0 80px 0;
+            padding: 50px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(33, 191, 230, 0.3);
+            box-shadow: 0 10px 40px rgba(33, 191, 230, 0.2);
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+            
+        }
+
+        .about-section-light {
+            background-color: rgba(251, 248, 217, 0.8);
+            border-color: rgba(251, 248, 217, 0.5);
+        }
+
+        .about-section-cyan {
+            background-color: rgba(33, 191, 230, 0.1);
+            border-color: rgba(240, 250, 252, 0.5);
+        }
+
+        .about-section h3 {
+            color: #1d1d1d;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+
+        @media (max-width: 768px) {
+            .about-container {
+                padding: 40px 30px;
+            }
+
+            .about-section {
+                padding: 30px 25px;
+                margin: 40px 0;
+            }
+
+            
+
+            .about-hero-title {
+                font-size: 2rem;
+            }
+
+            .about-subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar-modern">
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-container" id="navbarContainer">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="menuproyectos.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="panel panel1">
+        <div class="about-container" style="text-align: center;" >
+            <div class="about-hero-title">Get in Touch</div>
+            <p class="about-subtitle">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+        </div>
+    </section>
+
+    <!-- The Story -->
+    <section class="panel panel2">
+        <div class="dock">
+            <a href="https://www.instagram.com/nat_art.ist?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@nat.ba?is_from_webapp=1&sender_device=pc" target="_blank" class="icon"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:nathy.barriga@hotmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+            <a href="https://open.spotify.com/user/nathy.barriga?si=a3b8a6390f7f45a9" target="_blank" class="icon"><i class="fab fa-spotify"></i></a>
+            <a href="https://github.com/Nathy2028" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/nathys.ab?igsh=NmxqZDJscnY1MTA1&utm_source=qr" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+
+        </div>
+    </section>
+    
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100
+        });
+        
+        // Menu Hamburguesa
+        const hamburger = document.getElementById('hamburger');
+        const navbarContainer = document.getElementById('navbarContainer');
+        
+        hamburger.addEventListener('click', function() {
+            navbarContainer.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navbarContainer.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

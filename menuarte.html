@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="portafolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        .portfolio-card {
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background: white;
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn-view {
+            background-color: #21BFE6;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-view:hover {
+            background-color: #0fa3c8;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .portfolio-section {
+            padding: 80px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #21BFE6 0%, #00d4ff 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="portafolio">
+    <nav class="navbar-modern">
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-container" id="navbarContainer">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="menuproyectos.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div>
+            <h1 class="font-angelica" style="font-size: 150px;">Art Portfolio</h1>
+            <p class="hero-subtitle">exploring creative visions through digital and traditional mediums</p>
+        </div>
+    </section>
+
+    <!-- Digital Art Section -->
+    <section class="portfolio-section">
+        <h2 class="section-title">Digital Art</h2>
+        <div class="portfolio-grid">
+            <!-- Card 1 -->
+            <div class="card portfolio-card" data-aos="fade-up">
+                <img src="imagenes/placeholder.jpg" class="card-img-top" alt="Digital Illustrations">
+                <div class="card-body">
+                    <h5 class="card-title">Digital Illustrations</h5>
+                    <p class="card-text">A collection of vibrant digital illustrations exploring character design and storytelling through color and form.</p>
+                    <a href="#" class="btn btn-view">View Project</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card portfolio-card" data-aos="fade-up">
+                <img src="imagenes/placeholder.jpg" class="card-img-top" alt="Concept Art">
+                <div class="card-body">
+                    <h5 class="card-title">Concept Art</h5>
+                    <p class="card-text">Original concept designs for characters, environments, and visual development exploring unique worlds and atmospheres.</p>
+                    <a href="#" class="btn btn-view">View Project</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card portfolio-card" data-aos="fade-up">
+                <img src="imagenes/placeholder.jpg" class="card-img-top" alt="Digital Painting">
+                <div class="card-body">
+                    <h5 class="card-title">Digital Painting</h5>
+                    <p class="card-text">Expressive digital paintings combining traditional painting techniques with modern digital tools and effects.</p>
+                    <a href="#" class="btn btn-view">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditional Art Section -->
+    <section class="portfolio-section" style="background-color: white;">
+        <h2 class="section-title" data-aos="fade-up">Traditional Art</h2>
+        <div class="portfolio-grid">
+            <!-- Card 1 -->
+            <div class="card portfolio-card" data-aos="fade-up">
+                <img src="imagenes/placeholder.jpg" class="card-img-top" alt="Watercolor">
+                <div class="card-body">
+                    <h5 class="card-title">Watercolor Paintings</h5>
+                    <p class="card-text">Delicate and flowing watercolor compositions featuring landscapes, florals, and abstract explorations of light and transparency.</p>
+                    <a href="#" class="btn btn-view">View Project</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card portfolio-card" data-aos="fade-up">
+                <img src="imagenes/placeholder.jpg" class="card-img-top" alt="Drawing & Sketches">
+                <div class="card-body">
+                    <h5 class="card-title">Drawing & Sketches</h5>
+                    <p class="card-text">A collection of detailed pencil drawings, charcoal sketches, and observational studies exploring form and composition.</p>
+                    <a href="#" class="btn btn-view">View Project</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card portfolio-card" data-aos="fade-up">
+                <img src="imagenes/placeholder.jpg" class="card-img-top" alt="Mixed Media">
+                <div class="card-body">
+                    <h5 class="card-title">Mixed Media</h5>
+                    <p class="card-text">Experimental mixed media pieces combining various materials and techniques to create textured, layered artworks.</p>
+                    <a href="#" class="btn btn-view">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="portfolio-section" style="background: linear-gradient(135deg, #21BFE6 0%, #00d4ff 100%); color: white;">
+        <div data-aos="fade-up">
+            <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 30px; text-align: center;">Interested in collaborating?</h2>
+            <div style="text-align: center;">
+                <a href="contact.html" class="btn btn-view" style="background-color: white; color: #21BFE6;">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100
+        });
+        
+        // Menu Hamburguesa
+        const hamburger = document.getElementById('hamburger');
+        const navbarContainer = document.getElementById('navbarContainer');
+        
+        hamburger.addEventListener('click', function() {
+            navbarContainer.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navbarContainer.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
